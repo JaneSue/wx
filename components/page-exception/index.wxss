@@ -1,0 +1,75 @@
+/* components/page-error/page-error.wxss */
+
+.container-status-7500{
+    padding: 0 30rpx;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    border-top: 1rpx solid #ddd;
+}
+
+.container-status-7500 .icon-error{
+    width: 308rpx;
+    height: 327rpx;
+    background: url(/components/page-exception/images/login_error.png) no-repeat;
+    margin: 200rpx auto 15rpx auto;
+    background-size: 100% 100%;  
+}
+
+.container-status-7500 .error-message-1{
+    font-size: 42rpx;
+    color: #727580;
+    text-align: center;
+    padding: 0 100rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-bottom: 6rpx;
+}
+
+.container-status-7500 .error-message-2{
+    font-size: 32rpx;
+    color: #727580;
+    height: 45rpx;
+    line-height: 45rpx;
+    margin-bottom: 80rpx;
+    text-align: center;
+}
+
+.container-status-7500 .error-btn-1{
+    margin: 0 auto 30rpx auto;
+}
+
+.container-status-7500 .error-btn-2{
+    font-size: 30rpx;
+    color: #00A8FF;
+    text-align: center;
+}
+
+.container-error-default{
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    border-top: 1rpx solid #ddd;
+}
+
+.container-error-default .icon-error{
+    width: 750rpx;
+    height: 374rpx;
+    background: url(/components/page-exception/images/error.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 220rpx;
+}
+
+.container-error-default .error-message{
+    font-size: 32rpx;
+    color: #7b8e8d;
+    line-height: 45rpx;
+    text-align: center;
+    padding: 0 100rpx;
+    margin-top: -114rpx;
+}
+
+.container-error-default .error-btn{
+    margin: 103rpx auto 0 auto;
+}

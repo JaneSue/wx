@@ -1,0 +1,47 @@
+.container-page-default{
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    border-top: 1rpx solid #ddd;
+}
+
+.container-page-default .icon{
+    width: 750rpx;
+    height: 374rpx;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    margin-top: 220rpx;
+}
+
+.container-page-default .icon-coupon-receive{
+   background-image: url(/components/page-default/images/ep_coupon.png);
+}
+
+.container-page-default .icon-address{
+   background-image: url(/components/page-default/images/ep_address.png);
+}
+
+.container-page-default .icon-collect{
+   background-image: url(/components/page-default/images/ep_collect.png);
+}
+
+.container-page-default .icon-order{
+   background-image: url(/components/page-default/images/ep_order.png);
+}
+
+.container-page-default .icon-article{
+   background-image: url(/components/page-default/images/ep_article.png);
+}
+
+.container-page-default .message{
+    font-size: 32rpx;
+    color: #7b8e8d;
+    line-height: 45rpx;
+    text-align: center;
+    padding: 0 100rpx;
+    margin-top: -114rpx;
+}
+
+.container-page-default .page-default-btn{
+    margin: 103rpx auto 0 auto;
+}

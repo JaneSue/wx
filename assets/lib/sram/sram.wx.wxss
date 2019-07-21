@@ -1,0 +1,336 @@
+/**
+ * reset css
+ */
+
+page, view {
+    box-sizing: border-box;
+}
+
+page {
+    font-family: PingFang-Medium, PingFangSC-Regular, PingFang SC, Helvetica, sans-serif;
+    color: #333;
+    background: #f8f8f8;
+    font-size: 24rpx;
+    line-height: 1;
+}
+
+.sram-input, input, select, textarea {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 88rpx;
+    line-height: normal;
+    color: #424242;
+    font-size: 24rpx;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/**
+ * 容器
+ */
+
+.container {
+    position: relative;
+    z-index: 1000;
+    max-width: 1280rpx;
+    min-width: 640rpx;
+    margin: 0 auto;
+}
+
+/**
+ * 自动隐藏文字
+ */
+
+.sram-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/**
+ * 背景
+ */
+
+.sram-active-bg {
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+}
+
+.sram-active-bg:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * 清除浮动
+ */
+
+.sram-clearfix {
+    clear: both;
+}
+
+.sram-clearfix:before {
+    display: table;
+    content: " ";
+}
+
+.sram-clearfix:after {
+    clear: both;
+}
+
+/**
+ * 对齐,显示，隐藏等
+ */
+
+.sram-pull-right {
+    float: right !important;
+}
+
+.sram-pull-left {
+    float: left !important;
+}
+
+.sram-hide {
+    display: none !important;
+}
+
+.sram-show {
+    display: block !important;
+}
+
+.sram-invisible {
+    visibility: hidden;
+}
+
+.sram-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/**
+ * 栅格类
+ */
+
+.sram-row {
+    overflow: hidden;
+    margin: 0;
+}
+
+.sram-col-xs-1, .sram-col-xs-2, .sram-col-xs-3, .sram-col-xs-4, .sram-col-xs-5,
+.sram-col-xs-6, .sram-col-xs-7, .sram-col-xs-8, .sram-col-xs-9, .sram-col-xs-10,
+.sram-col-xs-11, .sram-col-5 {
+    position: relative;
+    float: left;
+}
+
+.sram-col-xs-12 {
+    width: 100%;
+    position: relative;
+}
+
+.sram-col-xs-11 {
+    width: 91.66666667%;
+}
+
+.sram-col-xs-10 {
+    width: 83.33333333%;
+}
+
+.sram-col-xs-9 {
+    width: 75%;
+}
+
+.sram-col-xs-8 {
+    width: 66.66666667%;
+}
+
+.sram-col-xs-7 {
+    width: 58.33333333%;
+}
+
+.sram-col-xs-6 {
+    width: 50%;
+}
+
+.sram-col-xs-5 {
+    width: 41.66666667%;
+}
+
+.sram-col-xs-4 {
+    width: 33.33333333%;
+}
+
+.sram-col-xs-3 {
+    width: 25%;
+}
+
+.sram-col-xs-2 {
+    width: 16.66666667%;
+}
+
+.sram-col-xs-1 {
+    width: 8.33333333%;
+}
+
+.sram-col-5 {
+    width: 20%;
+}
+
+/**
+ * 边框
+ */
+
+.sram-border-l {
+    border-left: 1px solid #e5e5e5;
+}
+
+.sram-border-r {
+    border-right: 1px solid #e5e5e5;
+}
+
+.sram-border-t {
+    border-top: 1px solid #e5e5e5;
+}
+
+.sram-border-b {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sram-border {
+    border: 1px solid #e5e5e5;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:1.5) {
+    .sram-border-l {
+        border: none;
+        background-image: -webkit-linear-gradient(0deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-image: linear-gradient(270deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .sram-border-r {
+        border: none;
+        background-image: -webkit-linear-gradient(0deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-image: linear-gradient(270deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .sram-border-t {
+        border: none;
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: linear-gradient(0, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-image: -webkit-linear-gradient(90deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+    }
+
+    .sram-border-b {
+        border: none;
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: linear-gradient(0, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-image: -webkit-linear-gradient(90deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+    }
+
+    .sram-border {
+        border: none;
+        background-image: -webkit-linear-gradient(270deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          -webkit-linear-gradient(180deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          -webkit-linear-gradient(90deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          -webkit-linear-gradient(0, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-image: linear-gradient(180deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          linear-gradient(270deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          linear-gradient(0deg, #e5e5e5, #e5e5e5 50%, transparent 50%),
+                          linear-gradient(90deg, #e5e5e5, #e5e5e5 50%, transparent 50%);
+        background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+        background-repeat: no-repeat;
+        background-position: top, right top, bottom, left top;
+    }
+}
+
+/**
+ * 弹性布局
+ */
+.sram-flex-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.sram-flex-con {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.sram-flex-box {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.sram-flex-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.sram-flex-x-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+}
+
+.sram-flex-x-end {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -webkit-box-pack: end;
+}
+
+.sram-flex-x-justify {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.sram-flex-y-start {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: start;
+}
+
+.sram-flex-y-center {
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+}
+
+.sram-flex-y-end {
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: end;
+}
+
+.sram-flex-stretch {
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+}
+
+.sram-reach{
+    color: #999;
+    text-align: center;
+    padding: 30rpx 0;
+    font-size: 26rpx;
+}

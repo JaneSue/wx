@@ -1,0 +1,14 @@
+<!--components/tabbar-items/index.wxml-->
+<view class="sram-tabbar-header" style="top:{{ position.top }}rpx">
+    <view wx:for="{{ items }}" class="item" wx:key style="width: {{ 1/items.length*100 }}%">
+        <view class="inner {{ index === idx ? 'active': '' }}" bindtap="tabbarHandle" data-type="{{ item.type }}" data-index="{{ index }}">
+            <view class="text">{{ item.label }}</view>
+            <view class="line"></view>
+        </view>
+    </view>
+</view>
+<view class="sram-tabbar-content" style="padding-top: {{ position.top + 83 }}rpx;">
+    <view wx:for="{{ items }}" wx:key class="item {{ index === idx ? 'active': '' }}">
+        <slot name="{{ index }}"></slot>
+    </view>
+</view>

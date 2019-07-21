@@ -1,0 +1,5 @@
+<view class="ct1 container-page-default container-{{ type }}">
+	<view class="icon icon-{{ type || 'default' }}"></view>
+	<view class="message">{{ message || '暂无信息.' }}</view>
+	<view class="sram-large-btn page-default-btn" onTap="goHome">去首页逛逛</view>
+</view>

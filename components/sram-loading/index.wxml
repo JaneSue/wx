@@ -1,0 +1,7 @@
+<!--components/page-loading/page-loading.wxml-->
+<cover-view class="sram-loading sram-flex-wrap sram-flex-y-center sram-loading-{{ type }} {{ !mask ? 'sram-mask-no' : '' }}">
+	<cover-view class="inner">
+		<cover-image class="icon-loading" src="./loading.gif" mode="aspectFit" />
+		<cover-view class="text">加载中...</cover-view>
+	</cover-view>
+</cover-view>

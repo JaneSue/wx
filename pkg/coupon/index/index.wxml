@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+    <sram-tabbar-items bindchange="tabBarChange" items="{{ items }}" idx="{{ tabIndex }}">
+        <scroll-view class="container-coupon container-{{ index }}" 
+            wx:for="{{ scheme }}" wx:key slot="{{ index }}" 
+            scroll-y="{{ true }}" bindscrolltolower="reachBottom" lower-threshold="100">
+            <sram-loading wx:if="{{ item.status === 'waiting' }}" type="fixed" mask="{{ false }}"></sram-loading>
+            <page-exception wx:elif="{{ status > 0 && status !== 'waiting' }}" status="{{ status }}" message="{{ error }}"></page-exception>
+            <block wx:else>
+                <sram-items items="{{ item.item }}" />
+                <view class="sram-reach" wx:if="{{ item.toast > 0 && item.reach }}">- 已经到底啦 -</view>
+            </block>
+        </scroll-view>
+    </sram-tabbar-items>
+</view>

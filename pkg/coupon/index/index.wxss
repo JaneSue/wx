@@ -1,0 +1,11 @@
+/* pages/index/index.wxss */
+
+.container {
+    overflow: hidden;
+    height: 2000rpx;
+}
+
+.container-coupon {
+    height: calc(100vh - 83rpx);
+    overflow: hidden;
+}

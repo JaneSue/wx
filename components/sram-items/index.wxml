@@ -1,0 +1,7 @@
+<!--components/sram-items/index.wxml-->
+<view class="sram-media-items">
+    <view class="sram-item" wx:for="{{ items }}" wx:key 
+        style="{{ items.length-1 === index ? 'margin-bottom: 0;' : '' }}">
+        {{ index }}
+    </view>
+</view>

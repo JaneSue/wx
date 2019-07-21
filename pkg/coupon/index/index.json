@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "sram-tabbar-items": "/components/sram-tabbar-items/index",
+        "sram-items": "/components/sram-items/index"
+    }
+}

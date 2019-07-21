@@ -1,0 +1,11 @@
+/* components/sram-items/index.wxss */
+.sram-items{
+    overflow: hidden;
+}
+
+.sram-item{
+    height: 200rpx;
+    overflow: hidden;
+    background: #eee;
+    margin-bottom: 20rpx;
+}

@@ -1,0 +1,17 @@
+<!--components/page-error/page-error.wxml-->
+
+<!-- 登录错误 -->
+<view wx:if="{{ status === 7500 }}" class="container-error container-status-7500 ct1">
+	<view class="icon-error"></view>
+	<view class="error-message-1">您还未登录</view>
+    <view class="error-message-2">(请先登录再进行此操作)</view>
+	<view class="sram-large-btn error-btn-1" bindtap="goLogin">登录/注册</view>
+    <view class="error-btn-2" bindtap="goHome">去首页逛逛></view>
+</view>
+
+<!-- 默认错误 -->
+<view wx:else class="container-error container-error-default ct1">
+	<view class="icon-error"></view>
+	<view class="error-message">{{ message }}</view>
+	<view class="sram-large-btn error-btn" bindtap="goHome">去首页逛逛</view>
+</view>

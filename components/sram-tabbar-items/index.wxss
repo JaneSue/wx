@@ -1,0 +1,53 @@
+/* components/tabbar-items/index.wxss */
+
+.sram-tabbar-header {
+    overflow: hidden;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    z-index: 999;
+    border-bottom: 1rpx solid #eee;
+}
+
+.sram-tabbar-header .item {
+    height: 83rpx;
+    float: left;
+    position: relative;
+    text-align: center;
+    line-height: 83rpx;
+    font-size: 30rpx;
+    color: #666;
+}
+
+.sram-tabbar-header .line {
+    display: none;
+    width: 98rpx;
+    height: 4rpx;
+    position: absolute;
+    background: #00c8be;
+    left: calc(50% - 49rpx);
+    bottom: 0;
+}
+
+.sram-tabbar-header .active .line {
+    display: block;
+}
+
+.sram-tabbar-header .active .text {
+    color: #333;
+}
+
+.sram-tabbar-content {
+    width: 750rpx;
+    min-height: 100vh;
+}
+
+.sram-tabbar-content .item {
+    display: none;
+}
+
+.sram-tabbar-content .item.active {
+    display: block;
+}

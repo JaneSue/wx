@@ -1,0 +1,56 @@
+/* components/page-loading/page-loading.wxss */
+@import '/assets/lib/sram/sram.wx';
+
+.sram-loading{
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+}
+
+.sram-loading-page{
+    height: 100vh;
+}
+
+.sram-loading-fixed{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999901;
+    left: 0;
+    top: 0;
+    opacity: 0.65;
+}
+
+.sram-mask-no{
+    width: auto;
+    text-align: center;
+    height: auto;
+    left: calc(50vw - 100rpx);
+    top: calc(50vh - 58rpx);
+}
+
+.sram-loading .inner{
+	width: 100%;
+    height: 116rpx;
+	overflow: hidden;
+    padding-bottom: 20rpx;
+} 
+
+.sram-mask-no .inner{
+    width: 200rpx;
+}
+
+.sram-loading .icon-loading{
+	margin: 0 auto;
+	height: 80rpx;
+	width: 80rpx;
+    display: block;
+}
+
+.sram-loading .text{
+	height: 36rpx;
+	line-height: 36rpx; 
+	font-size: 26rpx;
+	color: #999;
+	text-align: center;
+}
